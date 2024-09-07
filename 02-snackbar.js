@@ -1,0 +1,2 @@
+import"./assets/routing-CDLj9Ri9.js";import{i}from"./assets/vendor-BbbuE1sJ.js";const m=document.querySelector(".form");m.addEventListener("submit",e=>{e.preventDefault();const t=new FormData(e.target),s=Number(t.get("delay")),r=t.get("state");a(s,r).then(o=>{i.success({title:"Success",message:`✅ Fulfilled promise in ${o}ms`})}).catch(o=>{i.error({title:"Error",message:`❌ Rejected promise in ${o}ms`})})});function a(e,t){return new Promise((s,r)=>{setTimeout(()=>{t==="fulfilled"?s(e):r(e)},e)})}
+//# sourceMappingURL=02-snackbar.js.map
